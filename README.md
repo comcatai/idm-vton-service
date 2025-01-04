@@ -10,11 +10,32 @@ Virtual Try-On service using IDM-VTON model with Streamlit frontend and RunPod d
 
 ## Setup
 
-### Prerequisites
-- Docker
-- Python 3.8+
-- NVIDIA GPU (for inference)
-- RunPod account (for deployment)
+### System Requirements
+- NVIDIA GPU (RTX 4000 or better)
+- CUDA drivers
+- Docker with NVIDIA container toolkit
+
+### Python Setup
+1. Ensure Python is in your PATH:
+```bash
+# Add to ~/.bashrc or ~/.zshrc
+export PATH="/usr/local/bin/python3:$PATH"
+
+# If using a specific Python version
+export PATH="/usr/bin/python3:$PATH"
+```
+
+2. Verify Python installation:
+```bash
+python3 --version
+which python3
+```
+
+3. Install pip if not present:
+```bash
+sudo apt-get update
+sudo apt-get install python3-pip
+```
 
 ### Installation
 1. Clone the repository
